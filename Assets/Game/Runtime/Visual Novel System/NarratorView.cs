@@ -11,7 +11,6 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
     [SerializeField] private Image background;
     [SerializeField] private Image Char1;
     [SerializeField] private Image Char2;
-    [SerializeField] private GameObject buttonGameObject; // Debe estar definida en tu script.
 
 
     [SerializeField] private Animator anim;
@@ -28,9 +27,6 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
         
         dialogueBoxSkipButton.OnClick.RemoveAllListeners();
         dialogueBoxSkipButton.OnClick.AddListener(DialogueBoxSkipButtonAction);
-
-        buttonGameObject.SetActive(Narrator.Instance.isActMoveSpriteDownActive);
-
     }
     
     public void ShowDialogueBox(NarratorViewDialogueBox.Parameters _parameters) {

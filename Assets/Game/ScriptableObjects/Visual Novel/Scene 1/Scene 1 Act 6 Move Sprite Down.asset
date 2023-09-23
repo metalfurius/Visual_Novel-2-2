@@ -15,3 +15,4 @@ MonoBehaviour:
   FadeAtStart: 0
   FadeAtEnd: 0
   moveDistance: -6
+  moveDuration: 2

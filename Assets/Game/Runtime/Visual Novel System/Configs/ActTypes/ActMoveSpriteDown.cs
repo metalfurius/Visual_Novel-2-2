@@ -11,6 +11,8 @@ public class ActMoveSpriteDown : ActConfig
     private Vector3 targetPosition;
     private float startTime;
 
+    private bool isMoving = false;
+
     public override void OnStart()
     {
         Debug.Log("Start Move Sprite Down Act");
@@ -21,13 +23,17 @@ public class ActMoveSpriteDown : ActConfig
             targetPosition = initialPosition - Vector3.up * moveDistance;
             startTime = Time.time;
 
-            // Inicia la corutina para realizar el movimiento gradual.
-            Narrator.Instance.StartCoroutine(MoveSprite());
+            // Inicia la corutina solo si no estamos ya en movimiento.
+            if (!isMoving)
+            {
+                Narrator.Instance.StartCoroutine(MoveSprite());
+            }
         }
     }
 
     private IEnumerator MoveSprite()
     {
+        isMoving = true;
         float elapsedTime = 0f;
 
         while (elapsedTime < moveDuration)
@@ -39,12 +45,40 @@ public class ActMoveSpriteDown : ActConfig
             yield return null;
         }
 
-        // Cuando el movimiento esté completo, llamamos a NextAct para continuar la narración.
-        Narrator.Instance.NextAct();
+        isMoving = false;
+        // No llamamos a NextAct aquí, ya que queremos permitir el control manual con botones.
     }
 
     public override void OnEnd()
     {
         Debug.Log("End Move Sprite Down Act");
+    }
+
+    // Función pública para mover el sprite hacia arriba.
+    public void MoveSpriteUp()
+    {
+        if (!isMoving && Narrator.Instance.spriteGameObject != null)
+        {
+            initialPosition = Narrator.Instance.spriteGameObject.transform.position;
+            targetPosition = initialPosition + Vector3.up * moveDistance;
+            startTime = Time.time;
+
+            // Inicia la corutina para mover el sprite hacia arriba.
+            Narrator.Instance.StartCoroutine(MoveSprite());
+        }
+    }
+
+    // Función pública para mover el sprite hacia abajo.
+    public void MoveSpriteDown()
+    {
+        if (!isMoving && Narrator.Instance.spriteGameObject != null)
+        {
+            initialPosition = Narrator.Instance.spriteGameObject.transform.position;
+            targetPosition = initialPosition - Vector3.up * moveDistance;
+            startTime = Time.time;
+
+            // Inicia la corutina para mover el sprite hacia abajo.
+            Narrator.Instance.StartCoroutine(MoveSprite());
+        }
     }
 }

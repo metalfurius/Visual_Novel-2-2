@@ -3,20 +3,17 @@ using UnityEngine.UI;
 
 public class ButtonHandlerActMoveSpriteDown : MonoBehaviour
 {
-    public ActMoveSpriteDown moveSpriteAct; // Referencia al acto ActMoveSpriteDown que deseas ejecutar.
+    public ActMoveSpriteDown moveSpriteAct; // Referencia al acto ActMoveSpriteDown.
 
-    private void Start()
+    // Llama a la función pública MoveSpriteUp del ActMoveSpriteDown.
+    public void MoveSpriteUp()
     {
-        Button button = GetComponent<Button>(); // Obtén una referencia al componente Button en el mismo GameObject.
-        if (button != null && moveSpriteAct != null)
-        {
-            button.onClick.AddListener(ExecuteMoveSpriteDown); // Agrega un listener para el evento de clic en el botón.
-        }
+    moveSpriteAct.MoveSpriteUp(); 
     }
 
-    private void ExecuteMoveSpriteDown()
+    // Llama a la función pública MoveSpriteDown del ActMoveSpriteDown.
+    public void MoveSpriteDown()
     {
-        // Ejecuta el acto ActMoveSpriteDown cuando se haga clic en el botón.
-        moveSpriteAct.OnStart();
+    moveSpriteAct.MoveSpriteDown();
     }
 }

@@ -20,7 +20,6 @@ public partial class Narrator : Singleton<Narrator> {
 
     private SceneData currentScene;
     private Timer actTimer;
-    public bool isActMoveSpriteDownActive = false;
 
     public ActMoveSpriteDown moveSpriteAct; // Asigna el Scriptable Object en el Inspector.
     public GameObject spriteGameObject; // Asigna el GameObject de la escena en el Inspector.
@@ -41,7 +40,6 @@ public partial class Narrator : Singleton<Narrator> {
 
         currentScene = new SceneData(firstScene);
         currentScene.StartFirstAct();
-            isActMoveSpriteDownActive = false; // Inicializa la variable en falso al comenzar una nueva escena.
 
     }
     
@@ -51,7 +49,6 @@ public partial class Narrator : Singleton<Narrator> {
 
         currentScene = new SceneData(_scene);
         currentScene.StartFirstAct();
-            isActMoveSpriteDownActive = false; // Inicializa la variable en falso al comenzar un nuevo acto.
 
     }
     #endregion
