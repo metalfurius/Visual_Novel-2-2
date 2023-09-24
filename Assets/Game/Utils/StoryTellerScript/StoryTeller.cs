@@ -55,11 +55,11 @@ public class StoryTeller : MonoBehaviour
         {
             onStory = true;
 
-            images[0].DOFade(1, 1.5f).OnComplete(() =>
+            images[0].DOFade(1f, 0.5f).OnComplete(() =>
             {
-                images[1].DOFade(1, 1.5f).OnComplete(() =>
+                images[1].DOFade(1f, 0.5f).OnComplete(() =>
                 {
-                    images[2].DOFade(1, 1.5f).OnComplete(() =>
+                    images[2].DOFade(1f, 0.5f).OnComplete(() =>
                     {
                         onStory = false;
                         Invoke("FadeOutStoryCook", 2f);
@@ -76,11 +76,11 @@ public class StoryTeller : MonoBehaviour
         {
                 images[0].DOFade(0, 0.15f);
                 images[1].DOFade(0, 0.15f);
-                images[2].DOFade(0, 0.06f).OnComplete(() =>
+                images[2].DOFade(0, 0.15f).OnComplete(() =>
                 {
                     moveSpriteAct.MoveSpriteUp();
                     onStory = false;
-                    Narrator.Instance.NextAct();
+                    //Narrator.Instance.NextAct();
                 });
             
         }
