@@ -196,6 +196,73 @@ MonoBehaviour:
       sillas."
     m_Metadata:
       m_Items: []
+  - m_Id: 47459334790045696
+    m_Localized: 'Takeshi
+
+      Hola, buenas noches.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463691828846592
+    m_Localized: "Sr. Hiroshi\n\xA1Hola, se\xF1or! \xBFC\xF3mo ha sido su d\xEDa
+      hoy? \xBFQu\xE9 le gustar\xEDa comer esta noche?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463832094760960
+    m_Localized: "Takeshi\nHe tenido un d\xEDa agotador en la oficina. \xBFTiene
+      algo reconfortante para comer?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463919856377856
+    m_Localized: "Sr. Hiroshi\nPor supuesto, tenemos soba de cerdo y soba de ternera
+      con chiles, que son muy reconfortantes. \xBFCu\xE1l prefiere?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47466903621328896
+    m_Localized: "Takeshi\nCreo que optar\xE9 por el soba de cerdo, por favor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47466995224928256
+    m_Localized: "Sr. Hiroshi\nClaro, un plato de soba de cerdo en camino. Parece
+      que ha tenido un d\xEDa largo. \xBFTiene una rutina de trabajo muy intensa?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467027764338688
+    m_Localized: "Takeshi\nS\xED, trabajo hasta tarde casi todos los d\xEDas. Nunca
+      llego a casa cuando mi esposa est\xE1 despierta. Echo de menos pasar tiempo
+      con ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467120517177344
+    m_Localized: "Sr. Hiroshi\nEntiendo. La vida puede ser tan ajetreada en esta
+      ciudad. Aqu\xED siempre estamos para ofrecer un poco de consuelo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467147092287488
+    m_Localized: "Sr. Hiroshi\nAdem\xE1s de la comida, a veces compartimos historias.
+      \xBFLe gustar\xEDa compartir algo de lo que est\xE1 en su mente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467221897699328
+    m_Localized: "Takeshi\nBueno, mi esposa y yo est\xE1bamos planeando unas vacaciones
+      juntos. Pero con mi horario, parece que nunca encontramos el momento adecuado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467299970473984
+    m_Localized: "Sr. Hiroshi\nEso suena dif\xEDcil. Tal vez, cuando encuentre el
+      momento, puedan hacer ese viaje y pasar unas buenas vacaciones juntos. A veces,
+      solo se necesita un peque\xF1o esfuerzo para mantener viva esa conexi\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467343280857088
+    m_Localized: 'Takeshi
+
+      Gracias... Sus palabras son reconfortantes.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467403641085952
+    m_Localized: "Sr. Hiroshi\nDe nada, se\xF1or. Le servir\xE9 el plato enseguida."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
