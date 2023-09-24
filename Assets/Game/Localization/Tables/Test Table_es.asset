@@ -169,6 +169,33 @@ MonoBehaviour:
       un poco de sabor a la noche.'
     m_Metadata:
       m_Items: []
+  - m_Id: 47458358989414400
+    m_Localized: "Emily\n\xA1Estaba delicioso! No olvidaremos este lugar.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47458414777851904
+    m_Localized: "Sarah\n\xA1Cierto! Tokio nos ha dejado una huella imborrable para
+      siempre.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47458489872670720
+    m_Localized: "Sr. Hiroshi\nMe alegra que hayan disfrutado de la comida, ha sido
+      un placer conocerlas. Siempre ser\xE1n bienvenidas aqu\xED, chicas. \xA1Y buena
+      suerte con sus cartas de aceptaci\xF3n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47459284760387584
+    m_Localized: "Sr. Hiroshi\nBueno, espero que les vaya bien en la Universidad
+      y con la carta de admisi\xF3n. Me recuerdan a m\xED cuando ten\xEDa su edad,
+      llenas de sue\xF1os y aventuras por delante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47459332147634176
+    m_Localized: "Sr. Hiroshi\nAh, el encanto de este lugar es que cada d\xEDa trae
+      a alguien nuevo. A ver qui\xE9n ser\xE1 el pr\xF3ximo en sentarse en estas
+      sillas."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
