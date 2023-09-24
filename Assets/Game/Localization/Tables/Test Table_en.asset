@@ -19,19 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 302528073728
-    m_Localized: This is a test message
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 3967345090629632
-    m_Localized: Hello, Mimi!
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956992
-    m_Localized: Hello, Harry.
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956993
-    m_Localized: Did it hurt?
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 3972834927054848

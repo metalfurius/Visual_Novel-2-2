@@ -23,15 +23,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956992
-    m_Localized: Test 3
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 3967345090629632
-    m_Localized: Test 2
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 302528073728
-    m_Localized: Test 1
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

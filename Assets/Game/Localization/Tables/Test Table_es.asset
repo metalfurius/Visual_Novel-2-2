@@ -156,6 +156,19 @@ MonoBehaviour:
     m_Localized: "Emily\n\xA1Gracias!"
     m_Metadata:
       m_Items: []
+  - m_Id: 47455749113110528
+    m_Localized: 'Sr. Hiroshi
+
+      Otra noche en esta locura de ciudad. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47455839320006656
+    m_Localized: 'Sr. Hiroshi
+
+      Bueno, hora de encender esos fogones y darle
+      un poco de sabor a la noche.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
