@@ -68,7 +68,7 @@ public class CookingManager : MonoBehaviour
 
     public void Cook()
     {
-        StoryTeller.instance.TellStoryByImages("Cooking");
+        StoryTeller.instance.TellStoryCooking();
         // Lógica para determinar qué plato se cocina según la lista de ingredientes.
         string dish = DetermineDish(ingredientList);
         Debug.Log("Plato cocinado: " + dish);

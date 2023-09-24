@@ -10,17 +10,18 @@ public class Story
     public string imageChainName;
     public Sprite[] spriteImages;
 }
+
 public class StoryTeller : MonoBehaviour
 {
     [SerializeField] Story[] stories;
 
-   [SerializeField] Image[] images;
+   [SerializeField] SpriteRenderer[] images;
 
     [SerializeField] float fadeInTime;
     [SerializeField] float fadeOutTime;
 
     static public StoryTeller instance;
-    ButtonHandlerActMoveSpriteDown moveSpriteScript;
+
     bool onStory = false;
     private void Awake()
     {
@@ -32,32 +33,22 @@ public class StoryTeller : MonoBehaviour
     }
     void Start()
     {
-        moveSpriteScript = FindObjectOfType<ButtonHandlerActMoveSpriteDown>();
+
     }
 
     
-    public void TellStoryByImages(string storyName)
+    public void TellStoryCooking()
     {
-        SetStoryImages(storyName);
-
-        FadeInStory();
+        FadeInStoryCook();
+        FadeOutStoryCook();
+    }
+    public void TellStoryStart()
+    {
+        FadeInStoryStart();
+        FadeOutStoryStart();
     }
 
-    void SetStoryImages(string storyName)
-    {
-        foreach (Story story in stories)
-        {
-            if (story.imageChainName == storyName)
-            {
-                for (int i = 0; i < story.spriteImages.Length; i++)
-                {
-                    images[i].sprite = story.spriteImages[i];
-                }
-            }
-        }
-    }
-
-    void FadeInStory()
+    void FadeInStoryCook() //Se llama a esta funcion para que se haga la animacion de FadeIn de estar cocinando
     {
         if (!onStory)
         {
@@ -78,27 +69,62 @@ public class StoryTeller : MonoBehaviour
        
     }
     
-    public void FadeOutStory()
+    public void FadeOutStoryCook() 
     {
         if (!onStory)
         {
-            foreach (Image image in images)
-            {
-                image.DOFade(0, 0.75f).OnComplete(() =>
+                images[0].DOFade(0, 0.75f);
+                images[1].DOFade(0, 0.75f);
+                images[2].DOFade(0, 0.75f).OnComplete(() =>
                 {
                     onStory = false;
-                    moveSpriteScript.MoveSpriteUp();
+                    Narrator.Instance.NextAct();
                 });
-            }
+            
         }
         
     }
+    void FadeInStoryStart()//Se llama a esta funcion para que se haga la animacion de FadeIn del comienzo
+    {
+        if (!onStory)
+        {
+            onStory = true;
+
+            images[3].DOFade(1, 1.5f).OnComplete(() =>
+            {
+                images[4].DOFade(1, 1.5f).OnComplete(() =>
+                {
+                    images[5].DOFade(1, 1.5f).OnComplete(() =>
+                    {
+                        onStory = false;
+                        Invoke("FadeOutStoryStart", 2f);
+                    });
+                });
+            });
+        }
+
+    }
+
+    public void FadeOutStoryStart()
+    {
+        if (!onStory)
+        {
+            images[3].DOFade(0, 0.75f);
+            images[4].DOFade(0, 0.75f);
+            images[5].DOFade(0, 0.75f).OnComplete(() =>
+            {
+                onStory = false;
+                Narrator.Instance.NextAct();
+            });
+
+        }
+
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+       if (Input.GetKeyDown(KeyCode.Space))
         {
-            TellStoryByImages("Cooking");
+            FadeInStoryStart();
         }
-       
     }
 }
