@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Visual Novel/Acts/Play Music", fileName = "New Act Play Music")]
-public class ActPlayMusic : ActConfig {
+public class ActPlayMusic : ActConfig
+{
     // ==================== VARIABLES ===================
     public string container = "";
     public string clip = "";
@@ -23,13 +24,16 @@ public class ActPlayMusic : ActConfig {
                 if (musicClip != null)
                 {
                     audioSource.clip = musicClip;
+                    audioSource.loop = true; // Establece el audio en bucle
                     audioSource.Play();
                     Narrator.Instance.NextAct();
                 }
             }
         }
-    }  
-    public override void OnEnd() {
-        
     }
+
+    public override void OnEnd()
+    {
+
     }
+}
