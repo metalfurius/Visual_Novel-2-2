@@ -74,9 +74,9 @@ public class StoryTeller : MonoBehaviour
     {
         if (!onStory)
         {
-                images[0].DOFade(0, 0.35f);
-                images[1].DOFade(0, 0.35f);
-                images[2].DOFade(0, 0.35f).OnComplete(() =>
+                images[0].DOFade(0, 0.15f);
+                images[1].DOFade(0, 0.15f);
+                images[2].DOFade(0, 0.06f).OnComplete(() =>
                 {
                     moveSpriteAct.MoveSpriteUp();
                     onStory = false;
@@ -113,12 +113,12 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             canGoNext = false;
-            images[3].DOFade(0, 0.75f);
-            images[4].DOFade(0, 0.75f);
-            images[5].DOFade(0, 0.75f).OnComplete(() =>
+            images[3].DOFade(0, 0f);
+            images[4].DOFade(0, 0f);
+            images[5].DOFade(0, 0f).OnComplete(() =>
             {
                 onStory = false;
-                blackBackground.DOFade(0, 0.2f);
+                blackBackground.DOFade(0, 0f);
                 Narrator.Instance.NextAct();
                 Debug.Log("1");
 
