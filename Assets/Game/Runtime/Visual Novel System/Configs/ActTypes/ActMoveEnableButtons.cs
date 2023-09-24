@@ -12,13 +12,11 @@ public class ActMoveEnableButtons : ActConfig
     private float startTime;
 
     private bool isMoving = false;
-    private bool isAtBottom1 = false; // Variable para verificar si el sprite ya está en la posición más baja.
 
     public override void OnStart()
     {
         Debug.Log("Start Move Sprite Down Act");
-        Narrator.Instance.EnableButton1();
-        Narrator.Instance.EnableButton2();
+        Narrator.Instance.DisableButton2();
     }
 
     private IEnumerator MoveSprite()
@@ -32,6 +30,7 @@ public class ActMoveEnableButtons : ActConfig
             float t = Mathf.Clamp01(elapsedTime / moveDuration);
             Vector3 newPosition = Vector3.Lerp(initialPosition, targetPosition, t);
             Narrator.Instance.spriteGameObject.transform.position = newPosition;
+            isMoving = false;
             yield return null;
         }
 
@@ -42,20 +41,19 @@ public class ActMoveEnableButtons : ActConfig
     public override void OnEnd()
     {
         Debug.Log("End Move Sprite Down Act");
-        Narrator.Instance.DisableButton1();
-        Narrator.Instance.DisableButton2();
+        Narrator.Instance.DisableButtons();
 
     }
 
     // Función pública para mover el sprite hacia arriba.
     public void MoveSpriteUp()
     {
-        if (!isMoving && Narrator.Instance.spriteGameObject != null)
+        Debug.Log("llamadaUp");
+        if (!isMoving)
         {
             initialPosition = Narrator.Instance.spriteGameObject.transform.position;
             targetPosition = initialPosition + Vector3.up * moveDistance;
             startTime = Time.time;
-            isAtBottom1 = false; // El sprite ya no está en la posición más baja.
 
             // Inicia la corutina para mover el sprite hacia arriba.
             Narrator.Instance.StartCoroutine(MoveSprite());
@@ -65,7 +63,8 @@ public class ActMoveEnableButtons : ActConfig
     // Función pública para mover el sprite hacia abajo.
     public void MoveSpriteDown()
     {
-        if (!isMoving && Narrator.Instance.spriteGameObject != null && !isAtBottom1)
+        Debug.Log("llamadaD");
+        if (!isMoving)
         {
             initialPosition = Narrator.Instance.spriteGameObject.transform.position;
             targetPosition = initialPosition - Vector3.up * moveDistance;
@@ -73,7 +72,6 @@ public class ActMoveEnableButtons : ActConfig
 
             // Inicia la corutina para mover el sprite hacia abajo.
             Narrator.Instance.StartCoroutine(MoveSprite());
-            isAtBottom1 = true; // El sprite ahora está en la posición más baja.
         }
     }
 }
