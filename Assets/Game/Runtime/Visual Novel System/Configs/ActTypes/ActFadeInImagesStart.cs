@@ -9,11 +9,18 @@ using UnityEngine.UI;
 public class ActFadeInImagesStart : ActConfig
 {
     // ==================== VARIABLES ===================
-    public string TriggerKey;
+
+    public string[] textIds;
 
     // ==================== METODOS ====================
     public override void OnStart()
     {
+
         StoryTeller.instance.TellStoryStart();
+
+        //Narrator.Instance.ShowDialogueBox(new NarratorViewDialogueBox.Parameters
+        //{
+        //    textIds = textIds
+        //});
     }
 }

@@ -15,21 +15,23 @@ public class StoryTeller : MonoBehaviour
 {
     [SerializeField] Story[] stories;
 
-   [SerializeField] SpriteRenderer[] images;
-
+   [SerializeField] Image[] images;
+    [SerializeField] Image blackBackground;
     [SerializeField] float fadeInTime;
     [SerializeField] float fadeOutTime;
 
     static public StoryTeller instance;
 
+    ButtonHandlerActMoveSpriteDown moveButton;
     bool onStory = false;
+    bool canGoNext = false;
     private void Awake()
     {
         #region Singleton
         if (!instance) instance = this;
         else Destroy(this);
         #endregion
-
+        moveButton = FindObjectOfType<ButtonHandlerActMoveSpriteDown>();
     }
     void Start()
     {
@@ -61,7 +63,7 @@ public class StoryTeller : MonoBehaviour
                     images[2].DOFade(1, 1.5f).OnComplete(() =>
                     {
                         onStory = false;
-                        Invoke("FadeOutStory", 2f);
+                        Invoke("FadeOutCook", 2f);
                     });
                 });
             });
@@ -79,6 +81,7 @@ public class StoryTeller : MonoBehaviour
                 {
                     onStory = false;
                     Narrator.Instance.NextAct();
+                    moveButton.MoveSpriteUp();
                 });
             
         }
@@ -89,7 +92,7 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             onStory = true;
-
+            blackBackground.DOFade(1,0.3f);
             images[3].DOFade(1, 1.5f).OnComplete(() =>
             {
                 images[4].DOFade(1, 1.5f).OnComplete(() =>
@@ -97,7 +100,8 @@ public class StoryTeller : MonoBehaviour
                     images[5].DOFade(1, 1.5f).OnComplete(() =>
                     {
                         onStory = false;
-                        Invoke("FadeOutStoryStart", 2f);
+                        canGoNext = true;
+
                     });
                 });
             });
@@ -109,12 +113,16 @@ public class StoryTeller : MonoBehaviour
     {
         if (!onStory)
         {
+            canGoNext = false;
             images[3].DOFade(0, 0.75f);
             images[4].DOFade(0, 0.75f);
             images[5].DOFade(0, 0.75f).OnComplete(() =>
             {
                 onStory = false;
+                blackBackground.DOFade(0, 0.2f);
                 Narrator.Instance.NextAct();
+                Debug.Log("1");
+
             });
 
         }
@@ -122,9 +130,9 @@ public class StoryTeller : MonoBehaviour
     }
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0) && canGoNext)
         {
-            FadeInStoryStart();
+            FadeOutStoryStart();
         }
     }
 }
