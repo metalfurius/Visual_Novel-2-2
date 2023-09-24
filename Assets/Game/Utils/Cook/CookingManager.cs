@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class Dish
@@ -15,10 +16,11 @@ public class CookingManager : MonoBehaviour
     public static CookingManager Instance;
 
     public List<Dish> dishes;
+    [SerializeField] Button[] cookingButtons;
 
     public List<string> ingredientList = new List<string>(); // Lista de ingredientes seleccionados.
-    public Text ingredientText; // Referencia al objeto Text que muestra la lista de ingredientes en la pantalla.
-
+    public TextMeshProUGUI ingredientText; // Referencia al objeto Text que muestra la lista de ingredientes en la pantalla.
+    
     private void Awake()
     {
         Instance = this;
@@ -35,6 +37,7 @@ public class CookingManager : MonoBehaviour
         {
             ingredientList.Add(ingredientName);
             UpdateIngredientText();
+            Debug.Log("Clicked");
         }
     }
 
@@ -66,13 +69,26 @@ public class CookingManager : MonoBehaviour
     public void Cook()
     {
         // Lógica para determinar qué plato se cocina según la lista de ingredientes.
-        //string dish = DetermineDish();
-        //Debug.Log("Plato cocinado: " + dish);
-
+        string dish = DetermineDish(ingredientList);
+        Debug.Log("Plato cocinado: " + dish);
+        //Limpia la lista de ingredientes y lo deja preparado para hacer el siguiente plato
+        ResetCookTable();
         // Avanzar al siguiente acto o realizar acciones adicionales.
         Narrator.Instance.NextAct();
     }
 
+    private void ResetCookTable()
+    {
+        ingredientList.Clear();
+        UpdateIngredientText();
+    }
+    public void AbleCookingButtons(bool able)
+    {
+        foreach(Button button in cookingButtons)
+        {
+            button.interactable = able;
+        }
+    }
     private string DetermineDish(List<string> ingrdients)
     {
         // Lógica para determinar el plato cocinado según la lista de ingredientes.
