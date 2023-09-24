@@ -19,23 +19,141 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 302528073728
-    m_Localized: Test 1
+    m_Localized: "Sr. Hiroshi\n\xA1Hola chicas! \xBFC\xF3mo est\xE1n esta noche?
+      \xBFQu\xE9 les gustar\xEDa probar?\n"
     m_Metadata:
       m_Items: []
   - m_Id: 3967345090629632
-    m_Localized: Test 2
+    m_Localized: "Emily\n\xA1Hola! Est\xE1bamos buscando un sitio para cenar algo."
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956992
-    m_Localized: Test 3
+    m_Localized: "Emily\nDe camino a nuestro hotel hemos pasado por aqu\xED y ol\xEDa
+      genial."
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956993
-    m_Localized: "\xBFTe doli\xF3?"
+    m_Localized: "Sarah\nNo pod\xEDamos pasar de largo sin ver qu\xE9 hay por aqu\xED.\n"
     m_Metadata:
       m_Items: []
   - m_Id: 3972834927054848
-    m_Localized: "<anim=lightrot>Cuando te ca\xEDste del cielo.</anim>"
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45636226168905728
+    m_Localized: "Sr. Hiroshi\n\xA1C\xF3mo me alegra o\xEDr eso! \xBFY ya saben que
+      van a tomar, chicas?\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428562418917376
+    m_Localized: 'Emily
+
+      La verdad es que no lo tenemos claro.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428566084739072
+    m_Localized: "Sarah\n\xBFHay alguna especialidad de la casa?\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428568198668288
+    m_Localized: 'Sr. Hiroshi
+
+      La salsa de soja que llevan los platos es completamente
+      casera, la receta lleva en mi familia desde mucho antes de que yo pisara este
+      mundo.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428570522312704
+    m_Localized: "Emily\n\xBFEso suena genial!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429077173264384
+    m_Localized: 'Sarah
+
+      Asombroso.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429137042759680
+    m_Localized: "Emily\nPues creo que yo pedir\xE9 un plato de <anim=lightrot>ramen</anim>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429447077322752
+    m_Localized: "Sarah\nPara m\xED un <anim=lightrot>udon</anim>, por favor.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47451992367292416
+    m_Localized: "Sr. Hiroshi\n\xA1Tomando nota! Por cierto, \xBFde d\xF3nde son?
+      No parecen ser de por aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47452400670203904
+    m_Localized: "Emily\nSomos de Canad\xE1. Llev\xE1bamos mucho tiempo preparando
+      este viaje y \xA1por fin estamos aqu\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47452665683107840
+    m_Localized: "Sarah\nEs sorprendente la cultura de aqu\xED y la cantidad de templos
+      que hay repartidos por la ciudad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453009498595328
+    m_Localized: "Emily\nEsta ma\xF1ana incluso pudimos asistir a una ceremonia del
+      t\xE9. Era tan m\xE1gico\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453071297470464
+    m_Localized: "Sarah\nY justo esta noche volv\xEDamos de un karaoke que hace esquina
+      en la calle de al lado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453122455396352
+    m_Localized: "Sr. Hiroshi\n\xA1Qu\xE9 maravillosas experiencias! Aqu\xED, en
+      este rinc\xF3n de la ciudad, tambi\xE9n compartimos historias \xFAnicas. Una
+      vez, un cliente vino aqu\xED y jur\xF3 que nuestros noodles ten\xEDan el poder
+      de bendecir el futuro. \xA1A la semana de comer aqu\xED, gan\xF3 la loter\xEDa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453154462130176
+    m_Localized: 'Sr.Hiroshi
+
+      Es una de esas leyendas que uno no sabe aclarar
+      con certeza.Pero me gusta creer que mis fideos pueden echar un poco de suerte
+      en la vida de la gente.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453261760815104
+    m_Localized: "Emily\nOjal\xE1 consigamos un poco de esa suerte. Nosotras estamos
+      esperando la carta de la Universidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453340219465728
+    m_Localized: 'Sarah
+
+      Una vez que nos llegue sabremos si hemos entrado a
+      la misma Universidad. De lo contrario, cada una iremos a ciudades distintas
+      a estudiar.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453398692257792
+    m_Localized: "Emily\nLlevamos tanto tiempo juntas\u2026 Ser\xEDa algo complicado
+      para nuestra relaci\xF3n y nuestras vidas vivir en distintas ciudades."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453481441681408
+    m_Localized: "Sr. Hiroshi\nEntiendo\u2026 Esa carta puede ser algo decisivo en
+      la vida. Pero saben, a veces las sorpresas m\xE1s agradables ocurren cuando
+      menos te lo esperas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453540468121600
+    m_Localized: "Sr. Hiroshi\nLes traer\xE9 sus platos y, qui\xE9n sabe, quiz\xE1s
+      nuestros noodles tengan un toque de suerte esta noche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453591693156352
+    m_Localized: "Emily\n\xA1Gracias!"
     m_Metadata:
       m_Items: []
   references:
