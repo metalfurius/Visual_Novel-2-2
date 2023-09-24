@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ActConfig : ScriptableObject {
     // ==================== VARIABLES ===================
-    public bool FadeAtStart;
-    public bool FadeAtEnd;
     
     // ==================== METODOS ====================
     public virtual void OnStart() {}

@@ -13,7 +13,8 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
     [SerializeField] private Image Char2;
 
 
-    [SerializeField] private Animator anim;
+    [SerializeField] private Animator animBG;
+    [SerializeField] private Animator animFade;
     
     [Header("Selection View")]
     [SerializeField] private NarratorViewSelectionsView selectionsView;
@@ -46,7 +47,14 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
     {
         Show();
         DialogueBoxSkipButtonDisabled();
-        anim.SetTrigger(animation);
+        animBG.SetTrigger(animation);
+    }
+    public void Fade(string animation)
+    {
+        Show();
+        DialogueBoxSkipButtonDisabled();
+        animFade.SetTrigger(animation);
+        
     }
     public void ChangeSprite1(Sprite sprite)
     {

@@ -19,6 +19,7 @@ public partial class Narrator : Singleton<Narrator> {
     
     [SerializeField] private Animator BGanim;
     [SerializeField] private Animator AwningAnim;
+    [SerializeField] private Animator FadeAnim;
     [SerializeField] private Animator CharAnim;
 
     private SceneData currentScene;
@@ -87,6 +88,9 @@ public partial class Narrator : Singleton<Narrator> {
     public void AnimationBackground(string animation)
     {
         view.AnimationBackground(animation);
+    }
+    public void Fade(string animation){
+        view.Fade(animation);
     }
 
     public void StartAwning(){
