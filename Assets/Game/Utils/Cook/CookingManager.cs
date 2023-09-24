@@ -20,8 +20,7 @@ public class CookingManager : MonoBehaviour
 
     public List<string> ingredientList = new List<string>(); // Lista de ingredientes seleccionados.
     public TextMeshProUGUI ingredientText; // Referencia al objeto Text que muestra la lista de ingredientes en la pantalla.
-
-    public ButtonHandlerActMoveSpriteDown moveButtons;
+    
     private void Awake()
     {
         Instance = this;
@@ -29,7 +28,7 @@ public class CookingManager : MonoBehaviour
 
     private void Start()
     {
-        moveButtons = FindObjectOfType<ButtonHandlerActMoveSpriteDown>();
+        Debug.Log(DetermineDish(ingredientList));
     }
     public void AddIngredient(string ingredientName)
     {
@@ -77,7 +76,6 @@ public class CookingManager : MonoBehaviour
         ResetCookTable();
         // Avanzar al siguiente acto o realizar acciones adicionales.
         Narrator.Instance.NextAct();
-        moveButtons.MoveSpriteUp();
     }
 
     private void ResetCookTable()

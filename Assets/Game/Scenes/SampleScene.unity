@@ -878,7 +878,6 @@ MonoBehaviour:
   - {fileID: 1298506301}
   ingredientList: []
   ingredientText: {fileID: 1430064475}
-  moveButtons: {fileID: 0}
 --- !u!1 &865177895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1433,7 @@ MonoBehaviour:
   blackBackground: {fileID: 865177897}
   fadeInTime: 1.5
   fadeOutTime: 0.75
+  moveSpriteAct: {fileID: 11400000, guid: 117ea2a9c0ffa4aa88a707523defd0d3, type: 2}
 --- !u!224 &1627374415
 RectTransform:
   m_ObjectHideFlags: 0

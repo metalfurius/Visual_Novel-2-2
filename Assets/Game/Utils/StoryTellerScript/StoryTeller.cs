@@ -22,7 +22,7 @@ public class StoryTeller : MonoBehaviour
 
     static public StoryTeller instance;
 
-    ButtonHandlerActMoveSpriteDown moveButton;
+    [SerializeField] ActMoveEnableButtons moveSpriteAct;
     bool onStory = false;
     bool canGoNext = false;
     private void Awake()
@@ -31,7 +31,6 @@ public class StoryTeller : MonoBehaviour
         if (!instance) instance = this;
         else Destroy(this);
         #endregion
-        moveButton = FindObjectOfType<ButtonHandlerActMoveSpriteDown>();
     }
     void Start()
     {
@@ -63,7 +62,7 @@ public class StoryTeller : MonoBehaviour
                     images[2].DOFade(1, 1.5f).OnComplete(() =>
                     {
                         onStory = false;
-                        Invoke("FadeOutCook", 2f);
+                        Invoke("FadeOutStoryCook", 2f);
                     });
                 });
             });
@@ -75,13 +74,13 @@ public class StoryTeller : MonoBehaviour
     {
         if (!onStory)
         {
-                images[0].DOFade(0, 0.75f);
-                images[1].DOFade(0, 0.75f);
-                images[2].DOFade(0, 0.75f).OnComplete(() =>
+                images[0].DOFade(0, 0.35f);
+                images[1].DOFade(0, 0.35f);
+                images[2].DOFade(0, 0.35f).OnComplete(() =>
                 {
+                    moveSpriteAct.MoveSpriteUp();
                     onStory = false;
                     Narrator.Instance.NextAct();
-                    moveButton.MoveSpriteUp();
                 });
             
         }
