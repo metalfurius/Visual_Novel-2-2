@@ -2,9 +2,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class Dish
+{
+    public string dishName;
+    public List<string> dishIngredients;
+}
+
+
 public class CookingManager : MonoBehaviour
 {
     public static CookingManager Instance;
+
+    public List<Dish> dishes;
 
     public List<string> ingredientList = new List<string>(); // Lista de ingredientes seleccionados.
     public Text ingredientText; // Referencia al objeto Text que muestra la lista de ingredientes en la pantalla.
@@ -14,6 +24,10 @@ public class CookingManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        Debug.Log(DetermineDish(ingredientList));
+    }
     public void AddIngredient(string ingredientName)
     {
         // Añadir ingredientes a la lista si hay menos de 3.
@@ -52,30 +66,35 @@ public class CookingManager : MonoBehaviour
     public void Cook()
     {
         // Lógica para determinar qué plato se cocina según la lista de ingredientes.
-        string dish = DetermineDish();
-        Debug.Log("Plato cocinado: " + dish);
+        //string dish = DetermineDish();
+        //Debug.Log("Plato cocinado: " + dish);
 
         // Avanzar al siguiente acto o realizar acciones adicionales.
         Narrator.Instance.NextAct();
     }
 
-    private string DetermineDish()
+    private string DetermineDish(List<string> ingrdients)
     {
         // Lógica para determinar el plato cocinado según la lista de ingredientes.
         // Puedes implementar esta lógica según tus necesidades específicas.
         // Aquí, simplemente devuelve un plato de ejemplo.
-        if (ingredientList.Contains("Tomate") && ingredientList.Contains("Carne"))
+
+        int correct = 0;
+        for (int i = 0; i < dishes.Count; i++) //Itera sobre todas las recetas que hay
         {
-            return "Espagueti a la Bolognesa";
+
+            for (int x = 0; x < dishes[i].dishIngredients.Count; x++)//Itera sobre cada ingrediente de la receta
+            {
+                if (!ingrdients.Contains(dishes[i].dishIngredients[x])) break; //Si no contiene el ingrediente de la receta el plato hecho sale del bucle
+                else correct++;
+            }
+
+            if (correct == dishes[i].dishIngredients.Count) return dishes[i].dishName; //si contiene todos los ingredientes devuelve
+            else correct = 0;
         }
-        else if (ingredientList.Contains("Papa") && ingredientList.Contains("Queso"))
-        {
-            return "Papas Gratinadas";
-        }
-        else
-        {
-            return "Plato No Definido";
-        }
+        return "Plato pocho";
+
+       
     }
 }
 

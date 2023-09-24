@@ -1019,7 +1019,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7df3648f08a4e23bcd5e8f6ba8104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientList: []
+  dishes:
+  - dishName: Ramen
+    dishIngredients:
+    - Cerdo
+    - Sopa
+    - Fideos
+  - dishName: Udon
+    dishIngredients:
+    - Fideos
+    - Soja
+    - Cerdo
+  - dishName: Soba
+    dishIngredients:
+    - Cerdo
+    - Fideos
+    - Ingrediente
+  ingredientList:
+  - Sopa
+  - Cerdo
+  - Fideos
   ingredientText: {fileID: 0}
 --- !u!1 &709033173
 GameObject:
