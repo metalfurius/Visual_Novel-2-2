@@ -80,7 +80,7 @@ public class StoryTeller : MonoBehaviour
                 {
                     moveSpriteAct.MoveSpriteUp();
                     onStory = false;
-                    //Narrator.Instance.NextAct();
+                    
                 });
             
         }
@@ -100,7 +100,7 @@ public class StoryTeller : MonoBehaviour
                     {
                         onStory = false;
                         canGoNext = true;
-
+                        
                     });
                 });
             });
@@ -129,7 +129,7 @@ public class StoryTeller : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canGoNext)
+        if (canGoNext)
         {
             FadeOutStoryStart();
         }
