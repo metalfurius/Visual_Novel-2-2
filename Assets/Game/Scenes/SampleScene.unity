@@ -950,6 +950,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 592869652}
     m_Modifications:
+    - target: {fileID: 1290881996, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: speed
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1470213193, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1040,6 +1044,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639295818540004393, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: animFade
+      value: 
+      objectReference: {fileID: 1959201177}
+    - target: {fileID: 7639295818540004393, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: animFadeIn
+      value: 
+      objectReference: {fileID: 1959201177}
+    - target: {fileID: 7639295818540004393, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: animFadeOut
       value: 
       objectReference: {fileID: 1959201177}
     - target: {fileID: 7639295818540005335, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}

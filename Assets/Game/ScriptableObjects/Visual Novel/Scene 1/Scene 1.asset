@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Scene 1
   m_EditorClassIdentifier: 
   acts:
+  - {fileID: 11400000, guid: 9ffefd8d4b6114f0a92435506927cb3d, type: 2}
   - {fileID: 11400000, guid: b5f69a587ec704fd4a1934774ab21391, type: 2}
   - {fileID: 11400000, guid: 8d7e5fb58ec2c425f9d07d9248d21ca7, type: 2}
+  - {fileID: 11400000, guid: e1a0c6f9b2b5bd54094dc66d4148a298, type: 2}
   - {fileID: 11400000, guid: dc3e7167262c44b99a9fe725f1bd6838, type: 2}
   - {fileID: 11400000, guid: ff8457c4395fc4b6fb23a83ed61925a6, type: 2}
   - {fileID: 11400000, guid: 647102a85f856443e9d0eb93a812af83, type: 2}

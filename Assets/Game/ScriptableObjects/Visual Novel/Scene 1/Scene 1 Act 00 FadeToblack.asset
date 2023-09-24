@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b01b768610e7041d1afc5630d9227388, type: 3}
-  m_Name: Scene1 FadeToblack
+  m_Name: Scene 1 Act 00 FadeToblack
   m_EditorClassIdentifier: 
   TriggerKey: Fade1

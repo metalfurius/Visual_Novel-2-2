@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(menuName = "Visual Novel/Acts/Fade to Black", fileName = "New Act Fade to Black")]
-public class ActFadeToBlack : ActConfig
+[CreateAssetMenu(menuName = "Visual Novel/Acts/BlackToFade", fileName = "New Act BlackToFade")]
+public class ActBlackToFade : ActConfig
 {
     // ==================== VARIABLES ===================
     public string TriggerKey;
@@ -13,7 +13,7 @@ public class ActFadeToBlack : ActConfig
     public override void OnStart()
     {
         Debug.Log("Start Fade to Black Act");
-        Narrator.Instance.FadeIn(TriggerKey);
+        Narrator.Instance.FadeOut(TriggerKey);
         Narrator.Instance.NextAct();
     }
 

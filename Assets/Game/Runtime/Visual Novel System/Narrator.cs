@@ -92,8 +92,11 @@ public partial class Narrator : Singleton<Narrator> {
     {
         view.AnimationBackground(animation);
     }
-    public void Fade(string animation){
-        view.Fade(animation);
+    public void FadeIn(string animation){
+        view.FadeIn(animation);
+    }
+    public void FadeOut(string animation){
+        view.FadeOut(animation);
     }
 
     public void StartAwning(){

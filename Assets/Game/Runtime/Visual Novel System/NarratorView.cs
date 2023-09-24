@@ -20,7 +20,8 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
 
 
     [SerializeField] private Animator animBG;
-    [SerializeField] private Animator animFade;
+    [SerializeField] private Animator animFadeIn;
+    [SerializeField] private Animator animFadeOut;
 
     [Header("Selection View")]
     [SerializeField] private NarratorViewSelectionsView selectionsView;
@@ -102,11 +103,19 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
         DialogueBoxSkipButtonDisabled();
         animBG.SetTrigger(animation);
     }
-    public void Fade(string animation)
+    public void FadeIn(string animation)
     {
         Show();
         DialogueBoxSkipButtonDisabled();
-        animFade.SetTrigger(animation);
+        animFadeIn.SetTrigger(animation);
+
+    }
+
+    public void FadeOut(string animation)
+    {
+        Show();
+        DialogueBoxSkipButtonDisabled();
+        animFadeOut.SetTrigger(animation);
 
     }
     public void ChangeSprite1(Sprite sprite)
