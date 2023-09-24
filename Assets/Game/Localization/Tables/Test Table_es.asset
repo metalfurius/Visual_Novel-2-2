@@ -263,6 +263,20 @@ MonoBehaviour:
     m_Localized: "Sr. Hiroshi\nDe nada, se\xF1or. Le servir\xE9 el plato enseguida."
     m_Metadata:
       m_Items: []
+  - m_Id: 47467814762569728
+    m_Localized: "Takeshi:\nEst\xE1 realmente delicioso.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47481067827879936
+    m_Localized: "Sr. Hiroshi\nGracias, se\xF1or. Lo que me comentaba antes, me hace
+      recordar mis d\xEDas de juventud, cuando tambi\xE9n trabajaba largas horas
+      y apenas ve\xEDa a mi familia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47481120680304640
+    m_Localized: "Takeshi\n\xBFTambi\xE9n trabajaba en un lugar como este?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
