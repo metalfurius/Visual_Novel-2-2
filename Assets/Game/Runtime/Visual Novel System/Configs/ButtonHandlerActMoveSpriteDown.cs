@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ButtonHandlerActMoveSpriteDown : MonoBehaviour
 {
-    public ActMoveSpriteDown moveSpriteAct; // Referencia al acto ActMoveSpriteDown.
+    public ActMoveEnableButtons moveSpriteAct; // Referencia al acto ActMoveSpriteDown.
 
     // Llama a la función pública MoveSpriteUp del ActMoveSpriteDown.
     public void MoveSpriteUp()

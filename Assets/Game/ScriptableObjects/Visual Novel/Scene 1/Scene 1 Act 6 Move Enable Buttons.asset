@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd3ddffa6c5184349a7d2983d05fffb6, type: 3}
-  m_Name: Scene 1 Act 6 Move Sprite Down
+  m_Name: Scene 1 Act 6 Move Enable Buttons
   m_EditorClassIdentifier: 
   FadeAtStart: 0
   FadeAtEnd: 0
