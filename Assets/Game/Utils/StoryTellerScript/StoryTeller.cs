@@ -181,6 +181,7 @@ public class StoryTeller : MonoBehaviour
             {
                 onStory = false;
                 canGoNext = true;
+                FadeOutStoryEnd();
 
             });
         }
@@ -190,12 +191,12 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             canGoNext = false;
-            images[9].DOFade(0, 0f).OnComplete(() =>
+            images[9].DOFade(0, 5f).OnComplete(() =>
             {
                 onStory = false;
+                blackBackground.DOFade(0, 0f);
                 Narrator.Instance.NextAct();
                 Debug.Log("2");
-
             });
 
         }
