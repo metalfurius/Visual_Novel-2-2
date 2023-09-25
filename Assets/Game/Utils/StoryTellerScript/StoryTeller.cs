@@ -16,6 +16,7 @@ public class StoryTeller : MonoBehaviour
     [SerializeField] Story[] stories;
 
     [SerializeField] Image[] images;
+    [SerializeField] Image blackBackgroundCook;
     [SerializeField] Image blackBackground;
     [SerializeField] float fadeInTime;
     [SerializeField] float fadeOutTime;
@@ -54,7 +55,7 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             onStory = true;
-            blackBackground.DOFade(1, 0.3f);
+            blackBackgroundCook.DOFade(1, 0.3f);
             images[0].DOFade(1f, 0.5f).OnComplete(() =>
             {
                 images[1].DOFade(1f, 0.5f).OnComplete(() =>
@@ -80,7 +81,7 @@ public class StoryTeller : MonoBehaviour
             images[1].DOFade(0, 0.15f);
             images[2].DOFade(0, 0.15f).OnComplete(() =>
             {
-                blackBackground.DOFade(0, 0f);
+                blackBackgroundCook.DOFade(0, 0f);
                 onStory = false;
 
             });
