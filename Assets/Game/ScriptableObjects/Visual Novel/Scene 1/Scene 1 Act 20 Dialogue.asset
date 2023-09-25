@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e7cddc3cb91b14fb092a10f14003a9, type: 3}
+  m_Name: Scene 1 Act 20 Dialogue
+  m_EditorClassIdentifier: 
+  textIds:
+  - New Entry 59
+  image: {fileID: 21300000, guid: d825f81692c2e4c5592ddf45d9c84652, type: 3}
+  Awning: 0
+  Character1: {fileID: 21300000, guid: b066667160acd4ad9b4230fdde88f971, type: 3}
+  Character2: {fileID: 21300000, guid: b066667160acd4ad9b4230fdde88f971, type: 3}
