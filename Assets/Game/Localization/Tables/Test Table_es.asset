@@ -346,6 +346,24 @@ MonoBehaviour:
     m_Localized: "Al cabo de mucho tiempo me lleg\xF3 una postal..."
     m_Metadata:
       m_Items: []
+  - m_Id: 47683224791408640
+    m_Localized: 'Un hombre amable, con un delantal bastante desgastado, preparaba
+      los pedidos con destreza, llenando la noche con el sonido de los noodles chisporroteantes. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47683239421140992
+    m_Localized: "Detr\xE1s de \xE9l, un estante de madera sencillo exhib\xEDa una
+      variedad de ingredientes frescos: brotes de bamb\xFA crujientes, cebollas verdes
+      picadas y una selecci\xF3n de salsas caseras que promet\xEDan explosiones de
+      sabor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47683540190486528
+    m_Localized: "Este peque\xF1o rinc\xF3n nocturno, oculto a simple vista en el
+      laberinto de la ciudad, ofrec\xEDa una experiencia genuina que dejaba una impresi\xF3n
+      duradera en quienes lo encontrasen."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
