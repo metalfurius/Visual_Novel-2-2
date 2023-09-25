@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24bc099a044a4e438070644548dab1d, type: 3}
   m_Name: Scene 1 Act 3 FadeIn Start Images
   m_EditorClassIdentifier: 
-  textIds: []
+  Numero: 0

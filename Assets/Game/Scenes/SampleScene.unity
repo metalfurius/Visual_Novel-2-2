@@ -2502,6 +2502,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 469411098, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 469411100, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2525,6 +2529,10 @@ PrefabInstance:
     - target: {fileID: 483705080, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -274.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 492257186, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 492257188, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_Color.a
@@ -2550,6 +2558,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -735458460658076169, guid: 76748dfba8b044a11a6d7b8cf3507f2b, type: 2}
+    - target: {fileID: 776955140, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 960693444, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_SizeDelta.y
       value: 190.53
@@ -2569,6 +2581,10 @@ PrefabInstance:
     - target: {fileID: 1016834978, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_text
       value: Recetas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024405295, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1024405297, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_Sprite

@@ -33,32 +33,22 @@ public class StoryTeller : MonoBehaviour
         else Destroy(this);
         #endregion
     }
-    void Start()
-    {
-
-    }
-
-
     public void TellStoryCooking()
     {
         FadeInStoryCook();
-        FadeOutStoryCook();
     }
     public void TellStoryStart()
     {
         FadeInStoryStart();
-        FadeOutStoryStart();
     }
 
     public void TellStoryMid()
     {
         FadeInStoryMid();
-        FadeOutStoryMid();
     }
     public void TellStoryEnd()
     {
         FadeInStoryEnd();
-        FadeOutStoryEnd();
     }
 
 
@@ -115,7 +105,7 @@ public class StoryTeller : MonoBehaviour
                     {
                         onStory = false;
                         canGoNext = true;
-
+                        FadeOutStoryStart();
                     });
                 });
             });
@@ -135,7 +125,7 @@ public class StoryTeller : MonoBehaviour
                 onStory = false;
                 blackBackground.DOFade(0, 0f);
                 Narrator.Instance.NextAct();
-                Debug.Log("1");
+                Debug.Log("0");
 
             });
 
@@ -156,6 +146,7 @@ public class StoryTeller : MonoBehaviour
                     {
                         onStory = false;
                         canGoNext = true;
+                        FadeOutStoryMid();
 
                     });
                 });
@@ -203,17 +194,10 @@ public class StoryTeller : MonoBehaviour
             {
                 onStory = false;
                 Narrator.Instance.NextAct();
-                Debug.Log("1");
+                Debug.Log("2");
 
             });
 
-        }
-    }
-    void Update()
-    {
-        if (canGoNext)
-        {
-            FadeOutStoryStart();
         }
     }
 }
