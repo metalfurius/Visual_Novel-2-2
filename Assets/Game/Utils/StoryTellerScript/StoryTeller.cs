@@ -50,6 +50,18 @@ public class StoryTeller : MonoBehaviour
         FadeOutStoryStart();
     }
 
+    public void TellStoryMid()
+    {
+        FadeInStoryMid();
+        FadeOutStoryMid();
+    }
+    public void TellStoryEnd()
+    {
+        FadeInStoryEnd();
+        FadeOutStoryEnd();
+    }
+
+
     void FadeInStoryCook() //Se llama a esta funcion para que se haga la animacion de FadeIn de estar cocinando
     {
         if (!onStory)
@@ -129,6 +141,73 @@ public class StoryTeller : MonoBehaviour
 
         }
 
+    }
+    public void FadeInStoryMid()
+    {
+        if (!onStory)
+        {
+            onStory = true;
+            blackBackground.DOFade(1, 0.3f);
+            images[6].DOFade(1, 1.5f).OnComplete(() =>
+            {
+                images[7].DOFade(1, 1.5f).OnComplete(() =>
+                {
+                    images[8].DOFade(1, 1.5f).OnComplete(() =>
+                    {
+                        onStory = false;
+                        canGoNext = true;
+
+                    });
+                });
+            });
+        }
+    }
+    public void FadeOutStoryMid()
+    {
+        if (!onStory)
+        {
+            canGoNext = false;
+            images[6].DOFade(0, 0f);
+            images[7].DOFade(0, 0f);
+            images[8].DOFade(0, 0f).OnComplete(() =>
+            {
+                onStory = false;
+                blackBackground.DOFade(0, 0f);
+                Narrator.Instance.NextAct();
+                Debug.Log("1");
+
+            });
+
+        }
+    }
+    public void FadeInStoryEnd()
+    {
+        if (!onStory)
+        {
+            onStory = true;
+            blackBackground.DOFade(1, 0.3f);
+            images[9].DOFade(1, 1.5f).OnComplete(() =>
+            {
+                onStory = false;
+                canGoNext = true;
+
+            });
+        }
+    }
+    public void FadeOutStoryEnd()
+    {
+        if (!onStory)
+        {
+            canGoNext = false;
+            images[9].DOFade(0, 0f).OnComplete(() =>
+            {
+                onStory = false;
+                Narrator.Instance.NextAct();
+                Debug.Log("1");
+
+            });
+
+        }
     }
     void Update()
     {

@@ -10,13 +10,25 @@ public class ActFadeInImagesStart : ActConfig
 {
     // ==================== VARIABLES ===================
 
-    public string[] textIds;
+    public int Numero=0;
 
     // ==================== METODOS ====================
     public override void OnStart()
     {
-
-        StoryTeller.instance.TellStoryStart();
+        switch(Numero)
+        {
+            case 0:
+                StoryTeller.instance.TellStoryStart();
+            break;
+            case 1:
+                StoryTeller.instance.TellStoryMid();
+            break;
+            case 2:
+                StoryTeller.instance.TellStoryEnd();
+            break;
+            default:
+            break;
+        }
 
         //Narrator.Instance.ShowDialogueBox(new NarratorViewDialogueBox.Parameters
         //{
