@@ -96,7 +96,7 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             onStory = true;
-            blackBackground.DOFade(1, 0.3f);
+            blackBackground.DOFade(1, 0);
             images[3].DOFade(1, 1.5f).OnComplete(() =>
             {
                 images[4].DOFade(1, 1.5f).OnComplete(() =>
@@ -175,6 +175,7 @@ public class StoryTeller : MonoBehaviour
     {
         if (!onStory)
         {
+            Narrator.Instance.EndAwning();
             onStory = true;
             blackBackground.DOFade(1, 0.3f);
             images[9].DOFade(1, 1.5f).OnComplete(() =>
