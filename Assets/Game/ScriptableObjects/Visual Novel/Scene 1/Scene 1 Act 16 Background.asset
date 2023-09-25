@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene 1 Act 16 Background
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 55f7d3741a084413cb5aca027cfa9f14, type: 3}
-  BGChar1: {fileID: 0}
-  BGChar2: {fileID: 0}
-  BGChar3: {fileID: 21300000, guid: 0b656b4980d9cfb43a36ec4678e6f580, type: 3}
-  BGChar4: {fileID: 0}
+  showBGChar1: 0
+  showBGChar2: 0
+  showBGChar3: 1
+  showBGChar4: 0
