@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class ActBackground : ActConfig {
     // ==================== VARIABLES ===================
     public Sprite image;
-    public Sprite BGChar1;
-    public Sprite BGChar2;
-    public Sprite BGChar3;
-    public Sprite BGChar4;
+    public bool showBGChar1;
+    public bool showBGChar2;
+    public bool showBGChar3;
+    public bool showBGChar4;
 
     // ==================== METODOS ====================
     public override void OnStart() {
         Debug.Log("Start Background Act");
         Narrator.Instance.ChangeBackground(image);
-        Narrator.Instance.ChangeBGSprites(BGChar1,BGChar2,BGChar3,BGChar4);
+        Narrator.Instance.ChangeBGSprites(showBGChar1,showBGChar2,showBGChar3,showBGChar4);
         Narrator.Instance.NextAct();
     }
 

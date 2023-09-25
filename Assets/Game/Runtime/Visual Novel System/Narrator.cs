@@ -96,9 +96,9 @@ public partial class Narrator : Singleton<Narrator>
     {
         view.ChangeBackground(background);
     }
-    public void ChangeBGSprites(Sprite one, Sprite two, Sprite three, Sprite four)
+    public void ChangeBGSprites(bool showOne, bool showTwo, bool showThree, bool showFour)
     {
-        view.ChangeBGSprites(one, two, three, four);
+        view.ChangeBGSprites(showOne, showTwo, showThree, showFour);
     }
     public void AnimationBackground(string animation)
     {

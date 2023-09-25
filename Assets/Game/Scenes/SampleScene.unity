@@ -2502,6 +2502,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 469411100, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 23e1f6b316500c749bad99f8805d344d, type: 3}
+    - target: {fileID: 469411100, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 483705080, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_SizeDelta.x
       value: 185.71
@@ -2517,6 +2525,10 @@ PrefabInstance:
     - target: {fileID: 483705080, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -274.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 492257188, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 506413273, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_IsActive
@@ -2557,6 +2569,14 @@ PrefabInstance:
     - target: {fileID: 1016834978, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_text
       value: Recetas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024405297, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b656b4980d9cfb43a36ec4678e6f580, type: 3}
+    - target: {fileID: 1024405297, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1134185906, guid: 4a8838d3ec7cb8f42a3477c3672905ef, type: 3}
       propertyPath: m_text

@@ -51,50 +51,17 @@ public class NarratorView : View, INarratorViewDialogueBoxProtocol, INarratorVie
         Show();
         this.background.sprite = background;
     }
-    public void ChangeBGSprites(Sprite one, Sprite two, Sprite three, Sprite four)
+    public void ChangeBGSprites(bool showOne, bool showTwo, bool showThree, bool showFour)
     {
         Show();
-        // Comprueba si las imágenes son null y establece su alpha en 0 si es necesario
-        if (one == null)
-        {
-            BGChar1.color = new Color(BGChar1.color.r, BGChar1.color.g, BGChar1.color.b, 0f);
-        }
-        else
-        {
-            BGChar1.sprite = one;
-            BGChar1.color = new Color(BGChar1.color.r, BGChar1.color.g, BGChar1.color.b, 1f);
-        }
 
-        if (two == null)
-        {
-            BGChar2.color = new Color(BGChar2.color.r, BGChar2.color.g, BGChar2.color.b, 0f);
-        }
-        else
-        {
-            BGChar2.sprite = two;
-            BGChar2.color = new Color(BGChar2.color.r, BGChar2.color.g, BGChar2.color.b, 1f);
-        }
-
-        if (three == null)
-        {
-            BGChar3.color = new Color(BGChar3.color.r, BGChar3.color.g, BGChar3.color.b, 0f);
-        }
-        else
-        {
-            BGChar3.sprite = three;
-            BGChar3.color = new Color(BGChar3.color.r, BGChar3.color.g, BGChar3.color.b, 1f);
-        }
-
-        if (four == null)
-        {
-            BGChar4.color = new Color(BGChar4.color.r, BGChar4.color.g, BGChar4.color.b, 0f);
-        }
-        else
-        {
-            BGChar4.sprite = four;
-            BGChar4.color = new Color(BGChar4.color.r, BGChar4.color.g, BGChar4.color.b, 1f);
-        }
+        // Activa o desactiva las imágenes en función de las variables booleanas
+        BGChar1.gameObject.SetActive(showOne);
+        BGChar2.gameObject.SetActive(showTwo);
+        BGChar3.gameObject.SetActive(showThree);
+        BGChar4.gameObject.SetActive(showFour);
     }
+
 
 
     public void AnimationBackground(string animation)
