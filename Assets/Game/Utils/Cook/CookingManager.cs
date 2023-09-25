@@ -68,6 +68,7 @@ public class CookingManager : MonoBehaviour
 
     public void Cook()
     {
+        if(ingredientList.Count>1){
         StoryTeller.instance.TellStoryCooking();
         // Lógica para determinar qué plato se cocina según la lista de ingredientes.
         string dish = DetermineDish(ingredientList);
@@ -76,6 +77,7 @@ public class CookingManager : MonoBehaviour
         ResetCookTable();
         // Avanzar al siguiente acto o realizar acciones adicionales.
         Narrator.Instance.NextAct();
+        }
     }
 
     private void ResetCookTable()

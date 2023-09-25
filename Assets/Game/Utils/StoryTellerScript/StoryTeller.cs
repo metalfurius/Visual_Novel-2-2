@@ -15,7 +15,7 @@ public class StoryTeller : MonoBehaviour
 {
     [SerializeField] Story[] stories;
 
-   [SerializeField] Image[] images;
+    [SerializeField] Image[] images;
     [SerializeField] Image blackBackground;
     [SerializeField] float fadeInTime;
     [SerializeField] float fadeOutTime;
@@ -37,7 +37,7 @@ public class StoryTeller : MonoBehaviour
 
     }
 
-    
+
     public void TellStoryCooking()
     {
         FadeInStoryCook();
@@ -54,7 +54,7 @@ public class StoryTeller : MonoBehaviour
         if (!onStory)
         {
             onStory = true;
-
+            blackBackground.DOFade(1, 0.3f);
             images[0].DOFade(1f, 0.5f).OnComplete(() =>
             {
                 images[1].DOFade(1f, 0.5f).OnComplete(() =>
@@ -62,36 +62,38 @@ public class StoryTeller : MonoBehaviour
                     images[2].DOFade(1f, 0.5f).OnComplete(() =>
                     {
                         onStory = false;
+
+                        moveSpriteAct.MoveSpriteUp();
                         Invoke("FadeOutStoryCook", 2f);
                     });
                 });
             });
         }
-       
+
     }
-    
-    public void FadeOutStoryCook() 
+
+    public void FadeOutStoryCook()
     {
         if (!onStory)
         {
-                images[0].DOFade(0, 0.15f);
-                images[1].DOFade(0, 0.15f);
-                images[2].DOFade(0, 0.15f).OnComplete(() =>
-                {
-                    moveSpriteAct.MoveSpriteUp();
-                    onStory = false;
-                    
-                });
-            
+            images[0].DOFade(0, 0.15f);
+            images[1].DOFade(0, 0.15f);
+            images[2].DOFade(0, 0.15f).OnComplete(() =>
+            {
+                blackBackground.DOFade(0, 0f);
+                onStory = false;
+
+            });
+
         }
-        
+
     }
     void FadeInStoryStart()//Se llama a esta funcion para que se haga la animacion de FadeIn del comienzo
     {
         if (!onStory)
         {
             onStory = true;
-            blackBackground.DOFade(1,0.3f);
+            blackBackground.DOFade(1, 0.3f);
             images[3].DOFade(1, 1.5f).OnComplete(() =>
             {
                 images[4].DOFade(1, 1.5f).OnComplete(() =>
@@ -100,7 +102,7 @@ public class StoryTeller : MonoBehaviour
                     {
                         onStory = false;
                         canGoNext = true;
-                        
+
                     });
                 });
             });
