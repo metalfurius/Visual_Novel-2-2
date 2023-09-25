@@ -13,20 +13,9 @@ MonoBehaviour:
   m_Name: Scene 1 Act 8 Dialogue
   m_EditorClassIdentifier: 
   textIds:
-  - New Entry 28
-  - New Entry 29
-  - New Entry 30
-  - New Entry 31
-  - New Entry 32
-  - New Entry 33
-  - New Entry 34
-  - New Entry 35
-  - New Entry 36
-  - New Entry 37
-  - New Entry 38
-  - New Entry 39
-  - New Entry 40
+  - New Entry 21
+  - New Entry 22
   image: {fileID: 21300000, guid: 55f7d3741a084413cb5aca027cfa9f14, type: 3}
   Awning: 0
-  Character1: {fileID: 21300000, guid: ba65982ea202b4373a107a8b8e876258, type: 3}
+  Character1: {fileID: 21300000, guid: b066667160acd4ad9b4230fdde88f971, type: 3}
   Character2: {fileID: 21300000, guid: 023c514b3723b42629a78b43a0317c94, type: 3}

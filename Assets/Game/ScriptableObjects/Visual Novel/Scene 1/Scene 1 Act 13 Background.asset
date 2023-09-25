@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e24bc099a044a4e438070644548dab1d, type: 3}
-  m_Name: Scene 1 Act FadeIn Start Images
+  m_Script: {fileID: 11500000, guid: 429ad562e0328424b842defd7f089f5d, type: 3}
+  m_Name: Scene 1 Act 13 Background
   m_EditorClassIdentifier: 
-  textIds: []
+  image: {fileID: 21300000, guid: 55f7d3741a084413cb5aca027cfa9f14, type: 3}
+  BGChar1: {fileID: 0}
+  BGChar2: {fileID: 0}
+  BGChar3: {fileID: 0}
+  BGChar4: {fileID: 0}

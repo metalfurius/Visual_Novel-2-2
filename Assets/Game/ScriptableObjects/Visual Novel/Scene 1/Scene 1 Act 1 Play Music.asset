@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3ddffa6c5184349a7d2983d05fffb6, type: 3}
-  m_Name: Scene 1 Act 6 Move Enable Buttons
+  m_Script: {fileID: 11500000, guid: 6cb188901349e054ba240416fe6d282b, type: 3}
+  m_Name: Scene 1 Act 1 Play Music
   m_EditorClassIdentifier: 
   FadeAtStart: 0
   FadeAtEnd: 0
-  moveDistance: -6
-  moveDuration: 2
+  container: AudioSource
+  clip: midnight_noodles_game

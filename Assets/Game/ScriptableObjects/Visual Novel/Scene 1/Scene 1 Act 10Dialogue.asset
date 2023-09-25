@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86e7cddc3cb91b14fb092a10f14003a9, type: 3}
-  m_Name: Scene 1 Memories Dialogue
+  m_Name: Scene 1 Act 10Dialogue
   m_EditorClassIdentifier: 
-  textIds:
-  - New Entry 12
-  - New Entry 13
-  image: {fileID: 21300000, guid: 044a92e9f3201494fb5b126e3d2880cc, type: 3}
+  textIds: []
+  image: {fileID: 0}
   Awning: 0
-  Character1: {fileID: 21300000, guid: b066667160acd4ad9b4230fdde88f971, type: 3}
-  Character2: {fileID: 21300000, guid: b066667160acd4ad9b4230fdde88f971, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}

@@ -19,23 +19,327 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 302528073728
-    m_Localized: 
+    m_Localized: "Sr. Hiroshi\n\xA1Hola chicas! \xBFC\xF3mo est\xE1n esta noche?
+      \xBFQu\xE9 les gustar\xEDa probar?\n"
     m_Metadata:
       m_Items: []
   - m_Id: 3967345090629632
-    m_Localized: 
+    m_Localized: "Emily\n\xA1Hola! Est\xE1bamos buscando un sitio para cenar algo."
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956992
-    m_Localized: 
+    m_Localized: "Emily\nDe camino a nuestro hotel hemos pasado por aqu\xED y ol\xEDa
+      genial."
     m_Metadata:
       m_Items: []
   - m_Id: 3972355039956993
-    m_Localized: 
+    m_Localized: "Sarah\nNo pod\xEDamos pasar de largo sin ver qu\xE9 hay por aqu\xED.\n"
     m_Metadata:
       m_Items: []
-  - m_Id: 3972834927054848
-    m_Localized: 
+  - m_Id: 47507328830791680
+    m_Localized: 'Sr. Hiroshi
+
+      Es una de esas leyendas que uno no sabe aclarar
+      con certeza.Pero me gusta creer que mis fideos pueden echar un poco de suerte
+      en la vida de la gente.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47512807074160640
+    m_Localized: "Pero bajo el resplandor artificial, la vida en la ciudad se tej\xEDa
+      con hilos de estr\xE9s, y cada habitante llevaba consigo sus propios desaf\xEDos
+      y triunfos, como un peso en el coraz\xF3n y una carga en los hombros.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47512843803680768
+    m_Localized: "Aquella noche, como otra cualquiera. Aquel puesto, apenas visible
+      desde la calle principal, adornado con farolillos que destellaban como estrellas
+      en la penumbra, dejaba un aroma embriagador de fideos salteados en aquel callej\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47512753571618816
+    m_Localized: "Las calles de Tokio, las luces de ne\xF3n que iluminaban el cielo
+      nocturno y los sonidos de la ciudad creaban una sinfon\xEDa cuando ca\xEDa
+      la noche. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510741354274816
+    m_Localized: "Takeshi\nMuchas gracias, volver\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510677747654656
+    m_Localized: "Sr. Hiroshi\nJajaja. Y, as\xED fue. Me alegro de que haya disfrutado
+      de su cena y espero que  pronto encuentre el momento para esas vacaciones con
+      su esposa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510620466044928
+    m_Localized: 'Takeshi
+
+      Eso suena como un cuento de hadas.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510504640339968
+    m_Localized: "Sr. Hiroshi\nElla era una de las clientas habituales, y un d\xEDa
+      me invit\xF3 a un paseo por el parque. Ese paseo cambi\xF3 mi vida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510447820103680
+    m_Localized: "Sr. Hiroshi\nOh, s\xED, muchas historias. Como cuando conoc\xED
+      a mi esposa aqu\xED mismo. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510376382717952
+    m_Localized: 'Takeshi
+
+      Vaya, eso es impresionante. Debe tener muchas historias
+      que contar.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47510237433815040
+    m_Localized: "Sr. Hiroshi\nFue all\xED donde aprend\xED la receta secreta de
+      nuestra salsa de soja casera que a\xFAn usamos hoy en d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47509172281925632
+    m_Localized: "Sr. Hiroshi\nA veces, solo se necesita un peque\xF1o esfuerzo para
+      mantener viva esa conexi\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45636226168905728
+    m_Localized: "Sr. Hiroshi\n\xA1C\xF3mo me alegra o\xEDr eso! \xBFY ya saben que
+      van a tomar, chicas?\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428562418917376
+    m_Localized: 'Emily
+
+      La verdad es que no lo tenemos claro.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428566084739072
+    m_Localized: "Sarah\n\xBFHay alguna especialidad de la casa?\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428568198668288
+    m_Localized: 'Sr. Hiroshi
+
+      La salsa de soja que llevan los platos es completamente
+      casera, la receta lleva en mi familia desde mucho antes de que yo pisara este
+      mundo.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47428570522312704
+    m_Localized: "Emily\n\xA1Eso suena genial!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429077173264384
+    m_Localized: 'Sarah
+
+      Asombroso.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429137042759680
+    m_Localized: "Emily\nPues creo que yo pedir\xE9 un plato de <anim=lightrot>ramen</anim>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47429447077322752
+    m_Localized: "Sarah\nPara m\xED un <anim=lightrot>udon</anim>, por favor.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47451992367292416
+    m_Localized: "Sr. Hiroshi\n\xA1Tomando nota! Por cierto, \xBFde d\xF3nde son?
+      No parecen ser de por aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47452400670203904
+    m_Localized: "Emily\nSomos de Canad\xE1. Llev\xE1bamos mucho tiempo preparando
+      este viaje y \xA1por fin estamos aqu\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47452665683107840
+    m_Localized: "Sarah\nEs sorprendente la cultura de aqu\xED y la cantidad de templos
+      que hay repartidos por la ciudad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453009498595328
+    m_Localized: "Emily\nEsta ma\xF1ana incluso pudimos asistir a una ceremonia del
+      t\xE9. Era tan m\xE1gico\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453071297470464
+    m_Localized: "Sarah\nY justo esta noche volv\xEDamos de un karaoke que hace esquina
+      en la calle de al lado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453122455396352
+    m_Localized: "Sr. Hiroshi\n\xA1Qu\xE9 maravillosas experiencias! Aqu\xED, en
+      este rinc\xF3n de la ciudad, tambi\xE9n compartimos historias \xFAnicas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453154462130176
+    m_Localized: "Sr.Hiroshi\nUna vez, un cliente vino aqu\xED y jur\xF3 que nuestros
+      noodles ten\xEDan el poder de bendecir el futuro. \xA1A la semana de comer
+      aqu\xED, gan\xF3 la loter\xEDa!\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453261760815104
+    m_Localized: "Emily\nOjal\xE1 consigamos un poco de esa suerte. Nosotras estamos
+      esperando la carta de la Universidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453340219465728
+    m_Localized: 'Sarah
+
+      Una vez que nos llegue sabremos si hemos entrado a
+      la misma Universidad. De lo contrario, cada una iremos a ciudades distintas
+      a estudiar.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453398692257792
+    m_Localized: "Emily\nLlevamos tanto tiempo juntas\u2026 Ser\xEDa algo complicado
+      para nuestra relaci\xF3n y nuestras vidas vivir en distintas ciudades."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453481441681408
+    m_Localized: "Sr. Hiroshi\nEntiendo\u2026 Esa carta puede ser algo decisivo en
+      la vida. Pero saben, a veces las sorpresas m\xE1s agradables ocurren cuando
+      menos te lo esperas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453540468121600
+    m_Localized: "Sr. Hiroshi\nLes traer\xE9 sus platos y, qui\xE9n sabe, quiz\xE1s
+      nuestros noodles tengan un toque de suerte esta noche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47453591693156352
+    m_Localized: "Emily\n\xA1Gracias!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47455749113110528
+    m_Localized: 'Sr. Hiroshi
+
+      Otra noche en esta locura de ciudad. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47455839320006656
+    m_Localized: 'Sr. Hiroshi
+
+      Bueno, hora de encender esos fogones y darle
+      un poco de sabor a la noche.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47458358989414400
+    m_Localized: "Emily\n\xA1Estaba delicioso! No olvidaremos este lugar.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47458414777851904
+    m_Localized: "Sarah\n\xA1Cierto! Tokio nos ha dejado una huella imborrable para
+      siempre.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47458489872670720
+    m_Localized: "Sr. Hiroshi\nMe alegra que hayan disfrutado de la comida, ha sido
+      un placer conocerlas. Siempre ser\xE1n bienvenidas aqu\xED, chicas. \xA1Y buena
+      suerte con sus cartas de aceptaci\xF3n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47459284760387584
+    m_Localized: "Sr. Hiroshi\nBueno, espero que les vaya bien en la Universidad
+      y con la carta de admisi\xF3n. Me recuerdan a m\xED cuando ten\xEDa su edad,
+      llenas de sue\xF1os y aventuras por delante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47459332147634176
+    m_Localized: "Sr. Hiroshi\nAh, el encanto de este lugar es que cada d\xEDa trae
+      a alguien nuevo. A ver qui\xE9n ser\xE1 el pr\xF3ximo en sentarse en estas
+      sillas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47459334790045696
+    m_Localized: 'Takeshi
+
+      Hola, buenas noches.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463691828846592
+    m_Localized: "Sr. Hiroshi\n\xA1Hola, se\xF1or! \xBFC\xF3mo ha sido su d\xEDa
+      hoy? \xBFQu\xE9 le gustar\xEDa comer esta noche?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463832094760960
+    m_Localized: "Takeshi\nHe tenido un d\xEDa agotador en la oficina. \xBFTiene
+      algo reconfortante para comer?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47463919856377856
+    m_Localized: "Sr. Hiroshi\nPor supuesto, tenemos soba de cerdo y soba de ternera
+      con chiles, que son muy reconfortantes. \xBFCu\xE1l prefiere?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47466903621328896
+    m_Localized: "Takeshi\nCreo que optar\xE9 por el soba de cerdo, por favor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47466995224928256
+    m_Localized: "Sr. Hiroshi\nClaro, un plato de soba de cerdo en camino. Parece
+      que ha tenido un d\xEDa largo. \xBFTiene una rutina de trabajo muy intensa?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467027764338688
+    m_Localized: "Takeshi\nS\xED, trabajo hasta tarde casi todos los d\xEDas. Nunca
+      llego a casa cuando mi esposa est\xE1 despierta. Echo de menos pasar tiempo
+      con ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467120517177344
+    m_Localized: "Sr. Hiroshi\nEntiendo. La vida puede ser tan ajetreada en esta
+      ciudad. Aqu\xED siempre estamos para ofrecer un poco de consuelo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467147092287488
+    m_Localized: "Sr. Hiroshi\nAdem\xE1s de la comida, a veces compartimos historias.
+      \xBFLe gustar\xEDa compartir algo de lo que est\xE1 en su mente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467221897699328
+    m_Localized: "Takeshi\nBueno, mi esposa y yo est\xE1bamos planeando unas vacaciones
+      juntos. Pero con mi horario, parece que nunca encontramos el momento adecuado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467299970473984
+    m_Localized: "Sr. Hiroshi\nEso suena dif\xEDcil. Tal vez, cuando encuentre el
+      momento, puedan hacer ese viaje y pasar unas buenas vacaciones juntos. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467343280857088
+    m_Localized: 'Takeshi
+
+      Gracias... Sus palabras son reconfortantes.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467403641085952
+    m_Localized: "Sr. Hiroshi\nDe nada, se\xF1or. Le servir\xE9 el plato enseguida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47467814762569728
+    m_Localized: "Takeshi:\nEst\xE1 realmente delicioso.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47481067827879936
+    m_Localized: "Sr. Hiroshi\nGracias, se\xF1or. Lo que me comentaba antes, me hace
+      recordar mis d\xEDas de juventud, cuando tambi\xE9n trabajaba largas horas
+      y apenas ve\xEDa a mi familia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47481120680304640
+    m_Localized: "Takeshi\n\xBFTambi\xE9n trabajaba en un lugar como este?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47509165092888576
+    m_Localized: "Sr.Hiroshi\nS\xED, de hecho. Mi familia ten\xEDa un peque\xF1o
+      puesto de noodles cuando era joven, y sol\xEDa ayudar despu\xE9s de la escuela."
     m_Metadata:
       m_Items: []
   references:

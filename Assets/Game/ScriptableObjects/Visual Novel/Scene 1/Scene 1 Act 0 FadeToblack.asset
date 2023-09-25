@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9d70866119743039e6e9239efd5f5d, type: 3}
-  m_Name: Scene 1 Act 1 Background
+  m_Script: {fileID: 11500000, guid: b01b768610e7041d1afc5630d9227388, type: 3}
+  m_Name: Scene 1 Act 0 FadeToblack
   m_EditorClassIdentifier: 
-  TriggerKey: Anim1
+  TriggerKey: FadeIn
